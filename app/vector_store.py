@@ -154,9 +154,9 @@ class QdrantVectorStore(VectorStore):
         return len(chunks)
 
     def query(self, corpus: str, query_vector: list[float], n: int) -> list[tuple]:
-        results = self._client.search(
+        response = self._client.query_points(
             collection_name=corpus,
-            query_vector=query_vector,
+            query=query_vector,
             limit=n,
             with_payload=True,
         )
@@ -166,7 +166,7 @@ class QdrantVectorStore(VectorStore):
                 r.payload.get("document", ""),
                 {k: v for k, v in r.payload.items() if k != "document"},
             )
-            for r in results
+            for r in response.points
         ]
 
     def get_all(self, corpus: str) -> tuple[list[str], list[str], list[dict]]:
