@@ -1,0 +1,27 @@
+# Environment — never commit real keys
+.env
+
+# Local vector DB — rebuilt from source, no need to track
+chroma_db/
+
+# Raw corpus files — epub is copyrighted, keep off git
+data/
+lotr.epub
+
+# Client lives in its own repo (palantir-client)
+client/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+dist/
+
+# Claude Code
+AGENTS.md
+CLAUDE.md
+.claude/
+
+# macOS
+.DS_Store
