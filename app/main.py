@@ -3,8 +3,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.config import settings
 from app.routers import ingest, query
 
-print(f"VECTOR_STORE={settings.vector_store}")
-
 app = FastAPI(
     title=settings.app_name,
     description="RAG service for LOTR and Wikipedia Middle-earth corpora",

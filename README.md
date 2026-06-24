@@ -44,7 +44,7 @@ EMBEDDING_MODEL=all-MiniLM-L6-v2
 
 ## Ingest
 
-Before querying, you need to build the index. Place your processed corpus JSON files under `data/processed/lotr/` and `data/processed/wiki/`, then run:
+Before querying, you need to build the index. Processed corpus JSON files are under `data/processed/lotr/` and `data/processed/wiki/`.
 
 ```bash
 # Ingest LOTR corpus
@@ -54,6 +54,13 @@ curl -X POST http://localhost:8000/ingest -H "Content-Type: application/json" \
 # Ingest Wikipedia corpus
 curl -X POST http://localhost:8000/ingest -H "Content-Type: application/json" \
   -d '{"corpus": "wiki"}'
+```
+
+Pass `"reset": true` to drop and recreate the collection before ingesting. Required when the corpus files have changed, since upsert alone won't remove stale chunks:
+
+```bash
+curl -X POST http://localhost:8000/ingest -H "Content-Type: application/json" \
+  -d '{"corpus": "wiki", "reset": true}'
 ```
 
 ## Run locally

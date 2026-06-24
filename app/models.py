@@ -4,6 +4,7 @@ from pydantic import BaseModel
 
 class IngestRequest(BaseModel):
     corpus: Literal["lotr", "wiki"]
+    reset: bool = False
 
 
 class IngestResponse(BaseModel):

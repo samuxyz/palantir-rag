@@ -62,6 +62,11 @@ class VectorStore(ABC):
         """Return (ids, documents, metadatas) for all chunks in the corpus — used by BM25."""
         ...
 
+    @abstractmethod
+    def delete(self, corpus: str) -> None:
+        """Drop the entire corpus collection so re-ingest starts clean."""
+        ...
+
 
 # ── ChromaDB implementation (local) ──────────────────────────────────────────
 
@@ -102,6 +107,12 @@ class ChromaVectorStore(VectorStore):
     def get_all(self, corpus: str) -> tuple[list[str], list[str], list[dict]]:
         result = self._collection(corpus).get(include=["documents", "metadatas"])
         return result["ids"], result["documents"], result["metadatas"]
+
+    def delete(self, corpus: str) -> None:
+        try:
+            self._client.delete_collection(corpus)
+        except Exception:
+            pass
 
 
 # ── Qdrant implementation (production) ───────────────────────────────────────
@@ -187,6 +198,12 @@ class QdrantVectorStore(VectorStore):
                 break
         return ids, docs, metadatas
 
+    def delete(self, corpus: str) -> None:
+        try:
+            self._client.delete_collection(corpus)
+        except Exception:
+            pass
+
 
 # ── Factory ───────────────────────────────────────────────────────────────────
 
@@ -215,6 +232,10 @@ def vector_search(corpus: str, query_vector: list[float], n: int) -> list[tuple]
 
 def get_all_documents(corpus: str) -> tuple[list[str], list[str], list[dict]]:
     return get_vector_store().get_all(corpus)
+
+
+def delete_corpus(corpus: str) -> None:
+    get_vector_store().delete(corpus)
 
 
 # ── Shared metadata helper ────────────────────────────────────────────────────

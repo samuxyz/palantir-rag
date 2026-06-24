@@ -4,7 +4,7 @@ from pathlib import Path
 from fastapi import APIRouter, HTTPException
 from app.models import IngestRequest, IngestResponse
 from app.chunking import chunk_by_paragraph
-from app.vector_store import upsert_chunks
+from app.vector_store import upsert_chunks, delete_corpus
 
 router = APIRouter(prefix="/ingest", tags=["ingest"])
 
@@ -19,6 +19,9 @@ def ingest(request: IngestRequest) -> IngestResponse:
 
     if not corpus_dir.exists():
         raise HTTPException(status_code=404, detail=f"No data found for corpus '{request.corpus}'. Run the ingestion script first.")
+
+    if request.reset:
+        delete_corpus(request.corpus)
 
     docs = [json.loads(f.read_text()) for f in sorted(corpus_dir.glob("*.json"))]
 
