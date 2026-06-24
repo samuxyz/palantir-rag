@@ -69,14 +69,17 @@ def retrieve(query: str, corpus: str, top_k: int) -> list[Source]:
     candidates = _rrf_merge(vector_results, bm25_results)
     ranked = rerank(query, candidates)
 
-    # Deduplicate by doc_id — multiple chunks from the same document produce
-    # overlapping windows, so keep only the top-ranked chunk per document.
-    seen: set[str] = set()
+    # Deduplicate by doc_id (overlapping windows from the same doc) and by
+    # chunk text (identical content across different docs, e.g. shared wiki sections).
+    seen_docs: set[str] = set()
+    seen_texts: set[str] = set()
     deduped = []
     for row in ranked:
         doc_id = row[2].get("doc_id", row[0])
-        if doc_id not in seen:
-            seen.add(doc_id)
+        text_key = row[1][:200]
+        if doc_id not in seen_docs and text_key not in seen_texts:
+            seen_docs.add(doc_id)
+            seen_texts.add(text_key)
             deduped.append(row)
         if len(deduped) >= top_k:
             break

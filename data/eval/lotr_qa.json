@@ -1,0 +1,212 @@
+[
+  {
+    "id": "lotr_001",
+    "question": "What does Gandalf tell Frodo about Gollum in the chapter 'The Shadow of the Past'?",
+    "expected_answer":  "Gandalf warns Frodo not to be too eager to deal out death in judgement, saying: 'Many that live deserve death. And some that die deserve life. Can you give it to them? Then do not be too eager to deal out death in judgement. For even the very wise cannot see all ends.' He also says that Bilbo's mercy in sparing Gollum was meant to serve a purpose.",
+    "corpus": "lotr",
+    "top_k": 8
+  },
+  {
+    "id": "lotr_002",
+    "question": "By what other names and titles is Aragorn known throughout the Lord of the Rings?",
+    "expected_answer": "Aragorn goes by many names: Strider (his Ranger nickname in Bree), Elessar (Elfstone, his kingly name at coronation), Estel (Hope, his childhood name in Rivendell), Dúnadan (Man of the West), Thorongil (Eagle of the Star, used while serving Gondor secretly), and Isildur's Heir.",
+    "corpus": "both",
+    "top_k": 5
+  },
+  {
+    "id": "lotr_003",
+    "question": "how is frodo attitude towards the ring changing in the lord of the rings?",
+    "expected_answer": "At first the ring seems like a burden or curiosity but later he becomes more attached to it and obsessed with it.",
+    "corpus": "lotr",
+    "top_k": 3
+  },
+  {
+    "id": "lotr_004",
+    "question": "Why did Gandalf fail to meet Frodo at the Prancing Pony?",
+    "expected_answer": "Gandalf failed to meet Frodo at the Prancing Pony because he was waylaid and imprisoned at Isengard by Saruman",
+    "corpus": "both",
+    "top_k": 3
+  },
+  {
+    "id": "lotr_005",
+    "question": "Who is the father of Faramir and Boromir?",
+    "expected_answer": "Lord Denethor",
+    "corpus": "lotr",
+    "top_k": 3
+  },
+  {
+    "id": "lotr_006",
+    "question": "Does Gandalf call himself 'Gandalf the White' when he first reappears to Aragorn, Legolas and Gimli in Fangorn Forest?",
+    "expected_answer": "Not exactly. In the reappearance scene he says 'Yes, that was the name. I was Gandalf' and 'you may still call me Gandalf.' He appears robed in gleaming white with white hair, but only says 'I am Gandalf, Gandalf the White' later in the same chapter during a speech about the war.",
+    "corpus": "lotr",
+    "top_k": 3
+  },
+  {
+    "id": "lotr_007",
+    "question": "what does boromir say to aragorn as he dies?",
+    "expected_answer": "Farewell, Aragorn! Go to Minas Tirith and save my people! I have failed.",
+    "corpus": "lotr",
+    "top_k": 5
+  },
+  {
+    "id": "lotr_008",
+    "question": "why is faramir is wounded during the war of the ring?",
+    "expected_answer": "During the desperate retreat across the Pelennor Fields, he is struck down by both the Black Breath and a poisoned arrow or dart.",
+    "corpus": "lotr",
+    "top_k": 3
+  },
+  {
+    "id": "lotr_009",
+    "question": "How does Arwen bring the wounded Frodo to Rivendell?",
+    "expected_answer": "In the book, it is not Arwen but Glorfindel who finds the wounded Frodo and puts him on his horse Asfaloth to ride to Rivendell. The scene was changed for the Peter Jackson films.",
+    "corpus": "lotr",
+    "top_k": 3
+  },
+  {
+    "id": "lotr_010",
+    "question": "What happens to the Shire when the hobbits return?",
+    "expected_answer": "they discover the Shire has been taken over and ravaged by \"Sharkey\" (the fallen wizard Saruman) and his band of ruffians. They polluted the land, built ugly factories, and oppressed the locals.",
+    "corpus": "lotr",
+    "top_k": 3
+  },
+  {
+    "id": "lotr_011",
+    "question": "when does theoden die?",
+    "expected_answer": "King Théoden dies during the Battle of the Pelennor Fields. His horse Snowmane is struck by the Witch-king of Angmar's dark steed and falls, fatally crushing the king underneath",
+    "corpus": "lotr",
+    "top_k": 3
+  },
+  {
+    "id": "lotr_012",
+    "question": "What name does Aragorn take when he is crowned King of Gondor?",
+    "expected_answer": "Aragorn takes the name Elessar, meaning Elfstone in Quenya, when he is crowned King of Gondor.",
+    "corpus": "both",
+    "top_k": 3
+  },
+  {
+    "id": "lotr_013",
+    "question": "What does Éowyn reveal about herself when she stands between the Witch-king and King Théoden on the Pelennor Fields?",
+    "expected_answer": "Éowyn reveals she is a woman, not a man, saying 'no living man am I! You look upon a woman. Éowyn I am, Éomund's daughter.' This fulfils the prophecy that the Witch-king could not be slain by any living man.",
+    "corpus": "lotr",
+    "top_k": 3
+  },
+  {
+    "id": "lotr_014",
+    "question": "What does Frodo say at the Council of Elrond when he volunteers to take the Ring to Mordor?",
+    "expected_answer": "Frodo says 'I will take the Ring, though I do not know the way.'",
+    "corpus": "lotr",
+    "top_k": 3
+  },
+  {
+    "id": "lotr_015",
+    "question": "How many members does the Fellowship of the Ring have, and who are they?",
+    "expected_answer": "The Fellowship has nine members — Frodo, Sam, Merry, Pippin, Gandalf, Aragorn, Legolas, Gimli, and Boromir. Elrond declares them the Nine Walkers, set against the Nine Riders.",
+    "corpus": "lotr",
+    "top_k": 5
+  },
+  {
+    "id": "lotr_016",
+    "question": "What happens when Galadriel is offered the One Ring by Frodo?",
+    "expected_answer": "Galadriel is tempted but refuses. She says 'I pass the test' and declares she will diminish and go into the West and remain Galadriel, rather than become a dark queen.",
+    "corpus": "lotr",
+    "top_k": 3
+  },
+  {
+    "id": "lotr_017",
+    "question": "What does Gandalf say to the Balrog on the Bridge of Khazad-dûm?",
+    "expected_answer": "Gandalf says 'You cannot pass. I am a servant of the Secret Fire, wielder of the flame of Anor. You cannot pass. The dark fire will not avail you, flame of Udûn. Go back to the Shadow! You cannot pass.'",
+    "corpus": "lotr",
+    "top_k": 3
+  },
+  {
+    "id": "lotr_018",
+    "question": "What does Bilbo tell Gandalf when he says he feels 'all thin, sort of stretched' before leaving the Shire?",
+    "expected_answer": "Bilbo tells Gandalf he feels 'all thin, sort of stretched, like butter that has been scraped over too much bread' and that he needs a change, because the Ring has been wearing him out.",
+    "corpus": "lotr",
+    "top_k": 5
+  },
+  {
+    "id": "lotr_019",
+    "question": "What does Frodo do when he reaches the Crack of Doom instead of destroying the Ring?",
+    "expected_answer": "Frodo refuses to destroy the Ring. He says 'I do not choose now to do what I came to do. I will not do this deed. The Ring is mine!' and puts it on his finger, claiming it for himself.",
+    "corpus": "lotr",
+    "top_k": 3
+  },
+  {
+    "id": "lotr_020",
+    "question": "How does Sam respond when Frodo says he can no longer carry the Ring up Mount Doom?",
+    "expected_answer": "Sam offers to carry Frodo himself, saying 'I'd carry you on my back, if I could.'",
+    "corpus": "lotr",
+    "top_k": 3
+  },
+  {
+    "id": "lotr_021",
+    "question": "How does Shelob attack Frodo in the tunnel?",
+    "expected_answer": "Shelob comes from behind with hideous speed and stings Frodo in the neck with one swift stroke, leaving him paralysed and pale.",
+    "corpus": "lotr",
+    "top_k": 3
+  },
+  {
+    "id": "lotr_022",
+    "question": "What is the Mirror of Galadriel and what does she tell Frodo about it?",
+    "expected_answer": "The Mirror of Galadriel is a silver basin filled with water that shows visions of things that were, things that are, and things that yet may be. Galadriel tells Frodo she brought him to look into it if he will, warning that what he sees may not come to pass.",
+    "corpus": "lotr",
+    "top_k": 3
+  },
+  {
+    "id": "lotr_023",
+    "question": "What healing herb does Aragorn carry and say he gathered near Weathertop?",
+    "expected_answer": "Aragorn carries athelas, leaves he gathered near Weathertop. He uses them to clean wounds, crushing the leaves in water.",
+    "corpus": "lotr",
+    "top_k": 3
+  },
+  {
+    "id": "lotr_024",
+    "question": "Why does Frodo and Sam disguise themselves as orcs in Mordor?",
+    "expected_answer": "To travel undetected through Mordor after escaping the tower of Cirith Ungol, they put on orc-mail and helmets and cover themselves with orc-cloaks to pass among the enemy.",
+    "corpus": "lotr",
+    "top_k": 3
+  },
+  {
+    "id": "lotr_025",
+    "question": "Who guards the Paths of the Dead and what is the legend about them?",
+    "expected_answer": "Dead Men from the Dark Years guard the Paths of the Dead and will suffer no living man to pass. They can be seen at times passing out of the door like shadows down the stony road, causing the people of Harrowdale to shut their doors.",
+    "corpus": "lotr",
+    "top_k": 3
+  },
+  {
+    "id": "lotr_026",
+    "question": "Did Wormtongue act alone in corrupting Théoden, or was he working for someone?",
+    "expected_answer": "Wormtongue was an agent of Saruman. He worked to weaken and manipulate Théoden's mind on Saruman's behalf, and was in contact with Saruman even as the Fellowship approached Edoras.",
+    "corpus": "lotr",
+    "top_k": 3
+  },
+  {
+    "id": "lotr_027",
+    "question": "In the movie Legolas surfs down a shield at Helm's Deep — does this happen in the book?",
+    "expected_answer": "No, this does not happen in the book. It is a invention of Peter Jackson's film adaptation. In the book, the battle of Helm's Deep is described without any such stunt.",
+    "corpus": "lotr",
+    "top_k": 3
+  },
+  {
+    "id": "lotr_028",
+    "question": "What is Gollum's original name, and how did he come to possess the Ring?",
+    "expected_answer": "Gollum's original name was Sméagol. He found the Ring after his friend Déagol discovered it in the river Anduin. Sméagol killed Déagol to take it, and the Ring eventually twisted him into the creature known as Gollum.",
+    "corpus": "both",
+    "top_k": 5
+  },
+  {
+    "id": "lotr_029",
+    "question": "What does Saruman's broken staff represent and when does it happen?",
+    "expected_answer": "Saruman's staff is broken when Gandalf confronts him at Orthanc and strips him of his rank and power in the order of wizards. It represents his expulsion from the order and the loss of his authority.",
+    "corpus": "lotr",
+    "top_k": 3
+  },
+  {
+    "id": "lotr_030",
+    "question": "How does Legolas behave differently from the rest of the Fellowship during the storm on Caradhras?",
+    "expected_answer": "Legolas is untroubled by the storm and remains light of heart while the others struggle. He walks lightly on top of the snow rather than wading through it, showing the different nature of Elves.",
+    "corpus": "lotr",
+    "top_k": 3
+  }
+]
